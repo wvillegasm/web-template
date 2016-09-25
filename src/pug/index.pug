@@ -1,0 +1,15 @@
+doctype html
+html(lang="en_US")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width,initial-scale=1")
+        title= indexPage.title
+        each css in files.CSS
+            link(rel="stylesheet", href=`../${css}`)
+    body
+        p Hello world
+        section.main-section
+            p Main section
+        section.secondary-section
+            p Secondary Section
+        h1 Testing the Auto value for padding
